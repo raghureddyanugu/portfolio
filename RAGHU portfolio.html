@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghu's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #00796b; /* Dark teal for header */
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #00796b; /* Matching header color */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #00796b; /* Dark teal for headings */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #00796b; /* Dark teal for icons */
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #004d40; /* Darker teal on hover */
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin: 10px 0;
+            color: #00796b; /* Dark teal for project titles */
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #00796b; /* Dark teal for focus */
+            outline: none;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #00796b; /* Dark teal for button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #004d40; /* Darker teal on hover */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00796b; /* Dark teal for footer */
+            color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="raghu2.jpg" alt="Raghu's Profile Picture" class="profile-img">
+
+        <!-- Name and Title -->
+        <h1>Raghu</h1>
+        <h2>Logo and Graphic Designer</h2>
+
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Raghu! I'm a passionate logo and graphic designer with a love for creating clean, responsive, and customer-friendly logos. 
+                I create stunning logos and photo/video edits with 99% accuracy at low costs and in a short time. 
+                I am professional in photo/video editing and logo designing. I have a keen eye for detail and a love for creating beautiful designs. 
+                I have 3 years of experience in this field.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Logo Generating</li>
+                <li>Photo Editing</li>
+                <li>Video Editing</li>
+                <li>Graphic Designing</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>My Works</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="logo-design.jpg" alt="Logo Design Project">
+                    <h3>Creative Logo Design</h3>
+                    <p>Designed a modern and minimalistic logo for a tech startup, reflecting innovation and simplicity.</p>
+                </div>
+                <div class="project-card">
+                    <img src="photo-editing.jpg" alt="Photo Editing Project">
+                    <h3>Professional Photo Editing</h3>
+                    <p>Enhanced and retouched product photos for an e-commerce brand, ensuring high-quality visuals.</p>
+                </div>
+                <div class="project-card">
+                    <img src="video-editing.jpg" alt="Video Editing Project">
+                    <h3>Dynamic Video Editing</h3>
+                    <p>Edited promotional videos for a marketing campaign, adding effects and transitions for a professional look.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Contact Me</h2>
+            <form class="contact-form" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <h2>Connect with Me</h2>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+            <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/your-profile" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Raghu. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Form Validation -->
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+
+            if (!email.includes('@')) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            alert("Thank you for your message, " + name + "! I'll get back to you soon.");
+            return true;
+        }
+    </script>
+</body>
+</html>
